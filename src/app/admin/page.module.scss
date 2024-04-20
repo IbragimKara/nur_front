@@ -1,0 +1,45 @@
+
+.catalog{
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+
+}
+.page{
+    display: flex;
+    justify-content: center;
+    &__contener{
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    &__input{
+        width: 100%;
+        border: none;
+        padding: 20px 0;
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+        border-bottom: 1.20px solid #000;
+        &:focus{
+            outline: none;
+        }
+    }
+    &__but{
+        width: 100%;
+        background-color: transparent;
+        border: 1.2px solid #3b7a2c;
+        padding: 20px 40px;
+        font-weight: 500;
+        font-size: 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000;
+        margin-top: 30px;
+    }
+}

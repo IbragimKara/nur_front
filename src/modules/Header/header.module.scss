@@ -1,0 +1,143 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1420px;
+    width: 100%;
+    padding: 0 45px;
+    margin: auto;
+    margin-top: 55px;
+    &__logo{
+        text-decoration: none;
+        display: flex;
+        align-items: end;
+        column-gap: 3px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 24px;
+        color: #d2a364;
+        font-family: "Playfair Display";
+    }
+    &__list{
+        display: flex;
+        max-width: 380px;
+        text-decoration: none;
+        width: 100%;
+        justify-content: space-between;
+        list-style: none;
+    }
+    &__link{
+        text-decoration: none;
+        color: #000;
+        font-weight: 400;
+        font-size: 18px;
+        color: #000;
+        &_activ{
+            color: #d2a364;
+        }
+    }
+    &__phone{
+        font-weight: 300;
+        font-size: 18px;
+        text-align: right;
+        color: #000;
+        text-decoration: none;
+    }
+    &__button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        display: none;
+    }
+    &__navbar{
+        z-index: 10;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #D2A364;;
+        position: absolute;
+        padding: 50px 70px;
+        right: 0;
+        top: -450px;
+        transition: 0.3s;
+        display: none;
+        &_activ{  
+            top: 0;   
+            display: none;
+        }
+        &__list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            list-style: none;
+            row-gap: 40px;
+        }
+        &__link{
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            font-size: 20px;
+            &_activ{
+                color: #92570a;;
+            }
+        }
+        &__phone{
+            color: #fff;
+            font-weight: 300;
+            font-size: 18px;
+            display: block;
+            margin-top: 40px;
+            text-decoration: none;
+        }
+        &__button{
+            position: absolute;
+            right: 25px;
+            top: 40px;
+            border: none;
+            cursor: pointer;
+            background-color: transparent;
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .header{
+        padding: 0 24px;
+        &__link{
+            font-size: 16px;
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    .header{
+        margin-top: 30px;
+        padding: 0 24px;
+        &__list{
+            display: none;
+        }
+        &__phone{
+            display: none;
+        }
+        &__button{
+            display: block;
+            width: 40px;
+        }
+        &__navbar{
+            display: block;
+            &_activ{
+                display: block;
+            }
+        }
+    }
+}
+@media screen and (max-width: 420px){
+    .header{
+        &__navbar{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+    }
+}   

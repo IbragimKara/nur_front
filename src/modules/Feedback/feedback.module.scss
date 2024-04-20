@@ -1,0 +1,142 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__contener{
+
+        margin-top: 50px;
+        max-width: 768px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 50px;
+        padding: 0 24px;
+    }
+    &__text{
+        font-family: "Playfair Display";
+        font-weight: 700;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #D2A364;
+    }
+    &__subtitle{
+        font-weight: 400;
+        font-size: 40px;
+        color: #000;
+    }
+    &__inputs{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    &__input{
+        width: 100%;
+        border: none;
+        padding: 20px 0;
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
+        border-bottom: 1.20px solid #000;
+        &:focus{
+            outline: none;
+        }
+    }
+    &__block{
+        display: flex;
+        margin-top: 20px;
+        column-gap: 20px;
+        align-items: center;
+    }
+    &__checkbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border: 1.2px solid #000;
+    }
+    &__image{
+        width: 17px;
+    }
+    &__faik{
+        width: 17px;
+        height: 17px;
+        background-color: transparent;
+    }
+    &__info{
+        font-weight: 100;
+        font-size: 16px;
+        color: #000;
+    }
+    &__content{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+    }
+    &__button{
+        background-color: transparent;
+        border: 2px solid #D2A364;
+        border-radius: 10px;
+        padding: 20px 40px;
+        font-weight: 500;
+        font-size: 20px;
+        cursor: pointer;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .main{
+        &__contener{
+            margin-top: 25px;
+            row-gap: 25px;
+        }
+        &__subtitle{
+            font-size: 36px;
+        }
+        &__info{
+            font-size: 18px;
+        }
+        &__input{
+            font-size: 15px;
+        }
+        &__content{
+            justify-content: center;
+        }
+    }
+}
+
+@media screen and (max-width: 420px){
+    .main{
+        &__contener{
+            padding: 0 16px;
+
+        }
+        &__subtitle{
+            font-size: 27px;
+        }
+        &__block{
+            column-gap: 10px;
+        }
+        &__info{
+            font-size: 16px;
+        }
+        &__button{
+            padding: 15px 30px;
+            font-size: 18px;
+        }
+        &__input{
+            font-size: 14px;
+        }
+    }
+}
+.block{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
