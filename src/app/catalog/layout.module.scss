@@ -28,6 +28,9 @@
 .catalog{
     display: flex;
     justify-content: center;
+    max-width: 1105px;
+    width: 100%;
+    margin: auto;
     margin-top: 150px;
     &__contener{
         display: flex;

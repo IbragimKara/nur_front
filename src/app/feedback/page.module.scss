@@ -15,7 +15,7 @@
         font-weight: 300;
         font-size: 30px;
         text-transform: uppercase;
-        color: #000;
+        color: #fff;
     }
     &__subtitle{
         font-family: "Playfair Display";
@@ -30,12 +30,14 @@
     }
     &__input{
         width: 100%;
+        background-color: transparent;
         border: none;
         padding: 20px 0;
         font-weight: 400;
         font-size: 20px;
         text-transform: uppercase;
-        border-bottom: 1.20px solid #000;
+        border-bottom: 1.20px solid #fff;
+        color: #fff;
         &:focus{
             outline: none;
         }
@@ -53,7 +55,7 @@
         cursor: pointer;
         width: 20px;
         height: 20px;
-        border: 1.2px solid #000;
+        border: 1.2px solid #fff;
     }
     &__image{
         width: 17px;
@@ -66,7 +68,7 @@
     &__info{
         font-weight: 100;
         font-size: 16px;
-        color: #000;
+        color: #fff;
     }
     &__content{
         width: 100%;

@@ -51,8 +51,8 @@
 }
 
 .item{
-    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
-    background: #fff;
+    box-shadow: 4px 8px 16px 0 #3a3a3a;
+    background: #2D2D2D;
     display: flex;
     flex-direction: column;
     padding: 25px;
@@ -77,7 +77,7 @@
         color: #D2A364;
     }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 990px) {
     .catalog{
         margin-top: 77px;
         &__list{
@@ -85,14 +85,14 @@
         }
     }
 }
-@media  screen and (max-width: 1100px) {
+@media  screen and (max-width: 797px) {
     .catalog{
         &__list{
             grid-template-columns: 1fr;
         }
     }
 }
-@media screen and (max-width: 725px){
+@media screen and (max-width: 200px){
     .catalog{
         &__contener{
             flex-direction: column;
